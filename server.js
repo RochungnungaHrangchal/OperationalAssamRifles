@@ -8,8 +8,7 @@ const cookieParser=require('cookie-parser');
 const dbConfig = require('./config/config.js');
 
 //const authroute = require('./routes/auth.route.js');
-
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 const MongoClient=require('mongodb').MongoClient;
 
 const https = require('https');
@@ -29,7 +28,7 @@ const httpsoptions = {
   
 
 const app = express();
-
+//
 app.use(bodyparser.urlencoded({extended:true}));
 
 app.use(bodyparser.json());
